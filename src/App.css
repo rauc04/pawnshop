@@ -1,42 +1,138 @@
-.App {
-  text-align: center;
+.wrapper {
+	display: flex;
+	align-items: center;
+	background-color: #f1f6fb;
+	width: 100%;
+	height: 88vh;
+	box-sizing: border-box;
+	gap: 1rem;
+	padding: 1rem;
+	justify-content: space-evenly;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-inputs {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.label {
+	font-size: 14px;
+	font-weight: 500;
+	color: #203fa4;
+}
+
+.input {
+	width: 350px;
+	padding: 0.25rem;
+	border-radius: 0.25rem;
+	font-size: 28px;
+	font-weight: 500;
+	color: #384956;
+	border: 1px solid #384956;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.content-result {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	width: 30rem;
+	height: 10rem;
+	border-radius: 0.5rem;
+	box-shadow: 2px 8px 42px -1px rgba(87, 82, 82, 0.16);
+	-webkit-box-shadow: 2px 8px 42px -1px rgba(87, 82, 82, 0.16);
+	-moz-box-shadow: 2px 8px 42px -1px rgba(87, 82, 82, 0.16);
+	padding: 2rem;
+	justify-content: space-between;
+}
+
+.new-contract-label {
+	font-weight: 500;
+	color: gray;
+}
+
+.content-price {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.sign {
+	font-size: 36px;
+}
+
+.price {
+	font-size: 48px;
+}
+
+.sign,
+.price {
+	color: #203fa4;
+	font-weight: 600;
+}
+
+.content-detail {
+	display: flex;
+	gap: 1rem;
+}
+
+.detail-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.detail-label {
+	color: gray;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.detail-value {
+	color: #384956;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.buttons-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  font-size: 14px;
+	padding: 0.25rem;
+	color: #fff;
+	border-radius: 0.25rem;
+	border: none;
+	height: 30px;
+  cursor: pointer;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary {
+	background: #203fa4;
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.btn-default {
+	background: #9197a9;
+  transition: all 1s ease-out;
+}
+
+.btn-default:hover {
+  opacity: 0.8;
 }
